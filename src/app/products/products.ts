@@ -13,7 +13,7 @@ export class Products {
     alert('Proizvod "' + naziv + '" je dodan u korpu!');
   }
   products: Product[] = [
-    new Product('Protein Brownie', 'Sočan čokoladni kolač bez brašna.', 'https://placehold.co/300x300/5D4037/FFF?text=Brownie', 4.50),
+    new Product('Protein Brownie', 'Sočan čokoladni kolač bez brašna.', '/products/protein-brownie.jpg', 4.50),
     new Product('Keto Cheesecake', 'Cheesecake sa stevijom.', 'https://placehold.co/300x300/FBC02D/FFF?text=Cheesecake', 5.00),
     new Product('Raw Kuglice', 'Kuglice od datula i oraha.', 'https://placehold.co/300x300/795548/FFF?text=Kuglice', 3.00),
     new Product('Chia Puding', 'Puding sa bademovim mlijekom.', 'https://placehold.co/300x300/E91E63/FFF?text=Chia', 3.50),
