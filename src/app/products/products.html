@@ -1,1 +1,23 @@
-<p>products works!</p>
+<section class="products-container">
+    <h2>Naša Ponuda Zdravih Slatkiša</h2>
+
+    <div class="grid">
+
+        <div class="card" *ngFor="let p of products" [ngClass]="{'promo': p.price < 3.00}">
+
+            <img [src]="p.imageUrl" [alt]="p.title">
+
+            <div class="card-body">
+                <h3>{{ p.title }}</h3>
+                <p class="desc">{{ p.description }}</p>
+
+                <p class="price" [ngStyle]="{'color': p.price > 4 ? '#d32f2f' : '#388E3C'}">
+                    {{ p.price }} KM
+                </p>
+
+                <button (click)="kupiProizvod(p.title)">Dodaj u korpu</button>
+            </div>
+
+        </div>
+    </div>
+</section>
